@@ -196,5 +196,5 @@ If you want to contribute to this library, please take a look at this page_ befo
 Change Log
 ==========
 
-- 0.1.2 (09/09/2020)
+- 0.1.3 (09/09/2020)
     - First release
