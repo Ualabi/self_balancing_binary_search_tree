@@ -21,6 +21,7 @@ Time complexity Function in the class Action
 *O(K+logN)*     SBBT.kthsmallest(k)   Kth Minimum value
 *O(K+logN)*     SBBT.kthlargest(k)    Kth Maximum value
 *O(N)*          SBBT.getHeightTree()  Height of the tree
+*O(N)*          str(SBBT)             Visualize the tree
 =============== ===================== =====================
 
 I made the library **self_balancing_binary_search_tree** (sorry for the long name) with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities).
