@@ -55,11 +55,10 @@ The library works with the tree nodes defined as:
 Getting Started
 ===============
 
-To start working with the library, you will only need 3 lines more
+To start working with the library, you will only need 2 lines more
 
 .. code-block:: python
 
-    >>> from self_balancing_binary_search_tree import TreeNode
     >>> from self_balancing_binary_search_tree import SBBST
     >>> MySBBST = SBBST()
     
@@ -114,194 +113,30 @@ And that will be enough to start working with it
     #    0    10    6
     #
 
-Use the `binarytree.Node`_ class to build your own trees:
+Use the `TreeNode`_ class in case you want to build your own trees:
 
 .. _binarytree.Node:
     http://binarytree.readthedocs.io/en/latest/specs.html#class-binarytree-node
 
 .. code-block:: python
 
-    >>> from binarytree import Node
-    >>>
-    >>> root = Node(1)
-    >>> root.left = Node(2)
-    >>> root.right = Node(3)
-    >>> root.left.right = Node(4)
-    >>>
-    >>> print(root)
-    #
-    #      __1
-    #     /   \
-    #    2     3
-    #     \
-    #      4
-    #
+    >>> from binarytree import TreeNode
+    >>> head = Node(1)
+    >>> head.left = Node(1)
+    >>> head.right = Node(3)
+    >>> head.left.right = Node(4)
+    >>> head.right.left = Node(5)
+    >>> head.right.right = Node(6)
+    >>> print(head)
+     _1_
+    /   \
+    2   3
+     \ / \
+     4 5 6
+    
 
 Inspect tree properties:
 
-.. code-block:: python
-
-    >>> from binarytree import Node
-    >>>
-    >>> root = Node(1)
-    >>> root.left = Node(2)
-    >>> root.right = Node(3)
-    >>> root.left.left = Node(4)
-    >>> root.left.right = Node(5)
-    >>>
-    >>> print(root)
-    #
-    #        __1
-    #       /   \
-    #      2     3
-    #     / \
-    #    4   5
-    #
-    >>> root.height
-    2
-    >>> root.is_balanced
-    True
-    >>> root.is_bst
-    False
-    >>> root.is_complete
-    True
-    >>> root.is_max_heap
-    False
-    >>> root.is_min_heap
-    True
-    >>> root.is_perfect
-    False
-    >>> root.is_strict
-    True
-    >>> root.leaf_count
-    3
-    >>> root.max_leaf_depth
-    2
-    >>> root.max_node_value
-    5
-    >>> root.min_leaf_depth
-    1
-    >>> root.min_node_value
-    1
-    >>> root.size
-    5
-
-    >>> root.properties  # To see all at once:
-    {'height': 2,
-     'is_balanced': True,
-     'is_bst': False,
-     'is_complete': True,
-     'is_max_heap': False,
-     'is_min_heap': True,
-     'is_perfect': False,
-     'is_strict': True,
-     'leaf_count': 3,
-     'max_leaf_depth': 2,
-     'max_node_value': 5,
-     'min_leaf_depth': 1,
-     'min_node_value': 1,
-     'size': 5}
-
-    >>> root.leaves
-    [Node(3), Node(4), Node(5)]
-
-    >>> root.levels
-    [[Node(1)], [Node(2), Node(3)], [Node(4), Node(5)]]
-
-Use `level-order (breadth-first)`_ indexes to manipulate nodes:
-
-.. _level-order (breadth-first):
-    https://en.wikipedia.org/wiki/Tree_traversal#Breadth-first_search
-
-.. code-block:: python
-
-    >>> from binarytree import Node
-    >>>
-    >>> root = Node(1)                  # index: 0, value: 1
-    >>> root.left = Node(2)             # index: 1, value: 2
-    >>> root.right = Node(3)            # index: 2, value: 3
-    >>> root.left.right = Node(4)       # index: 4, value: 4
-    >>> root.left.right.left = Node(5)  # index: 9, value: 5
-    >>>
-    >>> print(root)
-    #
-    #      ____1
-    #     /     \
-    #    2__     3
-    #       \
-    #        4
-    #       /
-    #      5
-    #
-    >>> # Use binarytree.Node.pprint instead of print to display indexes
-    >>> root.pprint(index=True)
-    #
-    #       _________0-1_
-    #      /             \
-    #    1-2_____        2-3
-    #            \
-    #           _4-4
-    #          /
-    #        9-5
-    #
-    >>> # Return the node/subtree at index 9
-    >>> root[9]
-    Node(5)
-
-    >>> # Replace the node/subtree at index 4
-    >>> root[4] = Node(6, left=Node(7), right=Node(8))
-    >>> root.pprint(index=True)
-    #
-    #       ______________0-1_
-    #      /                  \
-    #    1-2_____             2-3
-    #            \
-    #           _4-6_
-    #          /     \
-    #        9-7     10-8
-    #
-    >>> # Delete the node/subtree at index 1
-    >>> del root[1]
-    >>> root.pprint(index=True)
-    #
-    #    0-1_
-    #        \
-    #        2-3
-
-Traverse the trees using different algorithms:
-
-.. code-block:: python
-
-    >>> from binarytree import Node
-    >>>
-    >>> root = Node(1)
-    >>> root.left = Node(2)
-    >>> root.right = Node(3)
-    >>> root.left.left = Node(4)
-    >>> root.left.right = Node(5)
-    >>>
-    >>> print(root)
-    #
-    #        __1
-    #       /   \
-    #      2     3
-    #     / \
-    #    4   5
-    #
-    >>> root.inorder
-    [Node(4), Node(2), Node(5), Node(1), Node(3)]
-
-    >>> root.preorder
-    [Node(1), Node(2), Node(4), Node(5), Node(3)]
-
-    >>> root.postorder
-    [Node(4), Node(5), Node(2), Node(3), Node(1)]
-
-    >>> root.levelorder
-    [Node(1), Node(2), Node(3), Node(4), Node(5)]
-
-    >>> list(root)  # Equivalent to root.levelorder
-    [Node(1), Node(2), Node(3), Node(4), Node(5)]
 
 `List representations`_ are also supported:
 
