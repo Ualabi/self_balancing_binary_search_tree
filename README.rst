@@ -7,17 +7,19 @@ Introduction
 
 A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching.
 Its times are:
-
-============ ================= =====================
-*O(1)*       Size              SBBT.numberelements()
-*O(logN)*    Search value      SBBT.search(n)
-*O(logN)*    Insert value      SBBT.insert(n)
-*O(logN)*    Delete value      SBBT.delete(n)
-*O(logN)*    Minimum value     SBBT.getMinVal()
-*O(logN)*    Maximum value     SBBT.getMaxVal()
-*O(K+logN)*  Kth Minimum value SBBT.kthsmallest(k)
-*O(K+logN)*  Kth Maximum value SBBT.kthlargest(k)
-============ ================= =====================
+=============== ================== =====================
+Time complexity Function           Function in the class
+=============== ================== =====================
+*O(1)*          Size of the tree   SBBT.getSize()
+*O(logN)*       Search value       SBBT.search(x)
+*O(logN)*       Insert value       SBBT.insert(x)
+*O(logN)*       Delete value       SBBT.delete(x)
+*O(logN)*       Minimum value      SBBT.getMinVal()
+*O(logN)*       Maximum value      SBBT.getMaxVal()
+*O(K+logN)*     Kth Minimum value  SBBT.kthsmallest(k)
+*O(K+logN)*     Kth Maximum value  SBBT.kthlargest(k)
+*O(N)*          Height of the tree SBBT.getHeight()
+=============== ================== =====================
 
 Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
 
