@@ -8,21 +8,21 @@ Introduction
 A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching.
 Its times are:
 
-=============== ================== =====================
-Time complexity Action             Function in the class
-=============== ================== =====================
-*O(1)*          Size of the tree   SBBT.getSize()
-*O(logN)*       Search value       SBBT.search(x)
-*O(logN)*       Insert value       SBBT.insert(x)
-*O(logN)*       Delete value       SBBT.delete(x)
-*O(logN)*       Minimum value      SBBT.getMinVal()
-*O(logN)*       Maximum value      SBBT.getMaxVal()
-*O(K+logN)*     Kth Minimum value  SBBT.kthsmallest(k)
-*O(K+logN)*     Kth Maximum value  SBBT.kthlargest(k)
-*O(N)*          Height of the tree SBBT.getHeight()
-=============== ================== =====================
+=============== ===================== =====================
+Time complexity Function in the class Action             
+=============== ===================== =====================
+*O(1)*          SBBT.getSize()        Size of the tree   
+*O(logN)*       SBBT.search(x)        Search value
+*O(logN)*       SBBT.insert(x)        Insert value
+*O(logN)*       SBBT.delete(x)        Delete value
+*O(logN)*       SBBT.getMinVal()      Minimum value
+*O(logN)*       SBBT.getMaxVal()      Maximum value
+*O(K+logN)*     SBBT.kthsmallest(k)   Kth Minimum value
+*O(K+logN)*     SBBT.kthlargest(k)    Kth Maximum value
+*O(N)*          SBBT.getHeight()      Height of the tree
+=============== ===================== =====================
 
-Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
+And all that with only *O(N)* space in memory. Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
 
 I made the library **self_balancing_binary_search_tree** (sorry for the long name) with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities).
 
