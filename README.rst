@@ -24,7 +24,7 @@ Time complexity Function in the class Action
 *O(N)*          str(SBBT)             Visualize the tree
 =============== ===================== =====================
 
-I made the library **self_balancing_binary_search_tree** (sorry for the long name) with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities). I used this structure (with a few changes so it can work out with intervals instead of numbers) in the Facebook Hacker Cup 2020 and it was fast enough to pass the time complexity, though I would suggest to migrate to C++ (thing that I have not done properly yet [sept 2020]). You can find more useful structures at my GitHub
+I made the library **self_balancing_binary_search_tree** (sorry for the long name) with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities). I used this structure (with a few changes so it can work out with intervals instead of numbers) in the Facebook Hacker Cup 2020 and it was fast enough to pass the time complexity, though I would suggest to migrate to C++ (thing that I have not done properly yet [sept 2020]).
 
 Requirements
 ============
