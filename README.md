@@ -35,7 +35,7 @@ To install a stable version from PyPi_:
 Or download the \__init__.py file directly from my GitHub_ and work with it.
 
 .. _PyPi: https://pypi.python.org/pypi/self_balancing_binary_search_tree
-.. _GitHub: https://github.com/Ualabi/self_balancing_binary_search_tree
+.. _GitHub https://github.com/Ualabi/self_balancing_binary_search_tree
 
 Getting Started
 ===============
