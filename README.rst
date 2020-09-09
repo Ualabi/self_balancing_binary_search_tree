@@ -9,7 +9,7 @@ A **self-balancing binary search tree** is a data structure, a kind advanced one
 Its times are:
 
 =============== ================== =====================
-Time complexity Function           Function in the class
+Time complexity Action             Function in the class
 =============== ================== =====================
 *O(1)*          Size of the tree   SBBT.getSize()
 *O(logN)*       Search value       SBBT.search(x)
