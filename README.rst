@@ -1,4 +1,5 @@
 # self_balancing_binary_search_tree
+-----------------------------------
 A Python implementation of a self balancing binary search tree (AVL Tree). Useful to practice, study and see how the SBBTs works.
 
 Introduction
@@ -34,11 +35,10 @@ To install a stable version from PyPi_:
 
     ~$ pip install self_balancing_binary_search_tree
 
-Or download the init.py file directly from my GitHub_.
-    
-    https://github.com/Ualabi/self_balancing_binary_search_tree
+Or download the init.py file directly from my GitHub_ and worh with it.
     
 .. _PyPi: https://pypi.python.org/pypi/self_balancing_binary_search_tree
+.. _GitHub: https://github.com/Ualabi/self_balancing_binary_search_tree
 
 Getting Started
 ===============
