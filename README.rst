@@ -12,16 +12,16 @@ It has *O(N)* space in memory and its respectives times and functions are:
 =============== ===================== =====================
 Time complexity Function in the class Action             
 =============== ===================== =====================
-*O(1)*          SBBT.getSize()        Size of the tree 
-*O(1)*          SBBT.getHeightTree()  Height of the tree
-*O(logN)*       SBBT.search(x)        Search value
-*O(logN)*       SBBT.insert(x)        Insert value
-*O(logN)*       SBBT.delete(x)        Delete value
-*O(logN)*       SBBT.getMinVal()      Minimum value
-*O(logN)*       SBBT.getMaxVal()      Maximum value
-*O(K+logN)*     SBBT.kthsmallest(k)   Kth Minimum value
-*O(K+logN)*     SBBT.kthlargest(k)    Kth Maximum value
-*O(N)*          str(SBBT)             Visualize the tree
+*O(1)*          sbbst.getSize()       Size of the tree 
+*O(1)*          sbbst.getHeightTree() Height of the tree
+*O(logN)*       sbbst.search(x)       Search value
+*O(logN)*       sbbst.insert(x)       Insert value
+*O(logN)*       sbbst.delete(x)       Delete value
+*O(logN)*       sbbst.getMinVal()     Minimum value
+*O(logN)*       sbbst.getMaxVal()     Maximum value
+*O(K+logN)*     sbbst.kthsmallest(k)  Kth Minimum value
+*O(K+logN)*     sbbst.kthlargest(k)   Kth Maximum value
+*O(N)*          str(sbbst)            Visualize the tree
 =============== ===================== =====================
 
 I made the library **sbbst** with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities). I used this structure (with a few changes so it can work out with intervals instead of numbers) in the Facebook Hacker Cup 2020 and it was fast enough to pass the time complexity, though I would suggest to migrate to C++ (thing that I have not done properly yet [sept 2020]).
