@@ -76,6 +76,7 @@ And that will be enough to start working with it. Take the following script as e
     nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
     for num in nums:
         MT.insert(num)
+    # It also works out: MT = SBBST(nums)
     print(BT)
     print("Number of elements:",BT.getSize())
     print("Height:",BT.getHeightTree())
