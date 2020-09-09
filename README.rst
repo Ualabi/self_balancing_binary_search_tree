@@ -58,6 +58,7 @@ Getting Started
 To start working with the library, you will only need 3 lines more
 
 .. code-block:: python
+
     >>> from self_balancing_binary_search_tree import TreeNode
     >>> from self_balancing_binary_search_tree import SBBST
     >>> MySBBST = SBBST()
