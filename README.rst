@@ -142,59 +142,10 @@ This would be the output you will see in the terminal:
     Number of elements: 14
 
 
-Additionally, I add a second class in case you want to use it along practice coding in platforms such as LeetCode_ or Interbiewbit_. At the beginning I had troubles to visualize what was happening in the Tree, such as the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today. 
+Additionally, I add a second class in case you want to use it along practice coding in platforms such as LeetCode_ or Interbiewbit_ . At the beginning I had troubles to visualize what was happening in the Tree, such as the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today. 
 
 .. _LeetCode: https://leetcode.com/p
 .. _Interviewbit: https://www.interviewbit.com/courses/programming/
-
-.. code-block:: python
-
-    >>> from binarytree import TreeNode
-    >>> head = Node(1)
-    >>> head.left = Node(1)
-    >>> head.right = Node(3)
-    >>> head.left.right = Node(4)
-    >>> head.right.left = Node(5)
-    >>> head.right.right = Node(6)
-    >>> print(head)
-     _1_
-    /   \
-    2   3
-     \ / \
-     4 5 6
-    
-
-Inspect tree properties:
-
-
-`List representations`_ are also supported:
-
-.. _List representations: https://en.wikipedia.org/wiki/Binary_tree#Arrays
-
-.. code-block:: python
-
-    >>> from binarytree import build
-    >>>
-    >>> # Build a tree from list representation
-    >>> values = [7, 3, 2, 6, 9, None, 1, 5, 8]
-    >>> root = build(values)
-    >>> print(root)
-    #
-    #            __7
-    #           /   \
-    #        __3     2
-    #       /   \     \
-    #      6     9     1
-    #     / \
-    #    5   8
-    #
-    >>> # Convert the tree back to list representation
-    >>> root.values
-    [7, 3, 2, 6, 9, None, 1, 5, 8]
-
-Check out the documentation_ for more details!
-
-.. _documentation: http://binarytree.readthedocs.io/en/latest/index.html
 
 Contributing
 ============
