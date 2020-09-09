@@ -7,6 +7,7 @@ Introduction
 
 A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching.
 Its times are:
+
 =============== ================== =====================
 Time complexity Function           Function in the class
 =============== ================== =====================
