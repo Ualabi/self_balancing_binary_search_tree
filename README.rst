@@ -187,8 +187,8 @@ The output in the terminal will be the following:
 Contributing
 ============
 
-The best way to learn is to copy the code and edit it with your own necessities. You can also find other useful data structures in my GitHub
-https://github.com/Ualabi/Useful_Data_Structures.
+The best way to learn is to copy the code and edit it with your own necessities. You can also find other useful data structures in my GitHub https://github.com/Ualabi/Useful_Data_Structures.
+
 If you want to contribute to the library, please take a look at this page_ before submitting a pull request. Thanks!
 
 .. _page: http://binarytree.readthedocs.io/en/latest/contributing.html
