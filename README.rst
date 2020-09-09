@@ -8,14 +8,14 @@ Introduction
 A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching.
 Its times are:
 
-- *O(N)*      | Memory space
-- *O(logN)*   | Search value
-- *O(logN)*   | Insert value
-- *O(logN)*   | Delete value
-- *O(logN)*   | Minimum value
-- *O(logN)*   | Maximum value
-- *O(K+logN)* | Kth Minimum value
-- *O(K+logN)* | Kth Maximum value
+- *O(N)*      || Memory space
+- *O(logN)*   || Search value
+- *O(logN)*   || Insert value
+- *O(logN)*   || Delete value
+- *O(logN)*   || Minimum value
+- *O(logN)*   || Maximum value
+- *O(K+logN)* || Kth Minimum value
+- *O(K+logN)* || Kth Maximum value
 
 Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
 
