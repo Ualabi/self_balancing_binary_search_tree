@@ -5,7 +5,7 @@ A Python implementation of a self balancing binary search tree (AVL Tree). Usefu
 Introduction
 ============
 
-A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching. Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
+A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching. Even though there a few types of SBBST (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
 
 It has *O(N)* space in memory and its respectives times and functions are:
 
