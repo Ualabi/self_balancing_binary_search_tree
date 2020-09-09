@@ -60,14 +60,14 @@ The library works with the tree nodes defined as:
 Getting Started
 ===============
 
-To start working with the library, you will only need 2 lines more:
+To start working with the library, you will only need 2 lines:
 
 .. code-block:: python
 
     >>> from self_balancing_binary_search_tree import SBBST
     >>> MT = SBBST()
     
-And that will be enough to start working with it. Take the following script as example
+And that will be enough to start working with it. Take the following script as an example
 
 .. code-block:: python
     
