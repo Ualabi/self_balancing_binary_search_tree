@@ -83,6 +83,13 @@ And that will be enough to start working with it. Take the following script as e
     print("Pre Order:",BT.inOrder())
     print("In Order:",BT.preOrder())
     print("Post Order:",BT.postOrder())
+    BT.delete(128)
+    BT.delete(140)
+    print(BT)
+    BT.insert(55)
+    print(BT)
+    print("Number of elements:",BT.getSize())
+    
 
 This would be the output you will see in the terminal:
 
@@ -106,6 +113,30 @@ This would be the output you will see in the terminal:
     In Order: [128, 4, 1, 3, 10, 14, 140, 134, 131, 135, 145, 142, 147, 146, 149]
     Post Order: [3, 1, 14, 10, 4, 131, 135, 134, 142, 146, 149, 147, 145, 140, 128]
     
+        ________131______
+       /                 \
+      _4__            ___142
+     /    \          /      \
+     1    14       134      145
+      \  /  \         \        \
+      3 10  21        135      149
+              \
+              50
+    
+    
+        __________131______
+       /                   \
+      _4__              ___142
+     /    \            /      \
+     1    14__       134      145
+      \  /    \         \        \
+      3 10    50        135      149
+             /  \
+            21  55
+    
+    Number of elements: 14
+
+
 Additionally, I add a second class in case you want to use it along practice coding in platforms such as LeetCode_ or Interbiewbit_. At the beginning I had troubles to visualize what was happening in the Tree, such as the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today. 
 
 .. _LeetCode: https://leetcode.com/p
