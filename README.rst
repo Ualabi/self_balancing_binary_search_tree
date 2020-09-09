@@ -1,4 +1,4 @@
-self_balancing_binary_search_tree
+sbbst (Self Balancing Binary Search Tree)
 ---------------------------------
 A Python implementation of a self balancing binary search tree (AVL Tree). Useful to practice, study and see how the SBBTs works.
 
@@ -24,7 +24,7 @@ Time complexity Function in the class Action
 *O(N)*          str(SBBT)             Visualize the tree
 =============== ===================== =====================
 
-I made the library **self_balancing_binary_search_tree** (sorry for the long name) with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities). I used this structure (with a few changes so it can work out with intervals instead of numbers) in the Facebook Hacker Cup 2020 and it was fast enough to pass the time complexity, though I would suggest to migrate to C++ (thing that I have not done properly yet [sept 2020]).
+I made the library **sbbst** with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities). I used this structure (with a few changes so it can work out with intervals instead of numbers) in the Facebook Hacker Cup 2020 and it was fast enough to pass the time complexity, though I would suggest to migrate to C++ (thing that I have not done properly yet [sept 2020]).
 
 Requirements
 ============
@@ -42,7 +42,7 @@ To install a stable version from PyPi_:
 
 Or download the *__init__.py* file directly from my GitHub_ and worh with it.
     
-.. _PyPi: https://pypi.python.org/pypi/self_balancing_binary_search_tree
+.. _PyPi: https://pypi.python.org/pypi/sbbst
 .. _GitHub: https://github.com/Ualabi/self_balancing_binary_search_tree
 
 The library works with the tree nodes defined as:
@@ -64,19 +64,19 @@ To start working with the library, you will only need 2 lines:
 
 .. code-block:: python
 
-    >>> from self_balancing_binary_search_tree import SBBST
-    >>> MT = SBBST()
+    >>> from sbbst import sbbst
+    >>> MT = sbbst()
     
 And that will be enough to start working with it. Take the following script as an example
 
 .. code-block:: python
     
-    from self_balancing_binary_search_tree import SBBST
-    ST = SBBST()
+    from sbbst import sbbst
+    ST = sbbst()
     nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
     for num in nums:
         ST.insert(num)
-    # It also works out: ST = SBBST(nums)
+    # It also works out: ST = sbbst(nums)
     print(ST)
     print("Number of elements:",ST.getSize())
     print("Height:",ST.getHeightTree())
