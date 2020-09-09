@@ -1,11 +1,11 @@
 sbbst (Self Balancing Binary Search Tree)
 ---------------------------------
-A Python implementation of a self balancing binary search tree (AVL Tree). Useful to practice, study and see how a SBBST works.
+A Python implementation of a self balancing binary search tree (AVL Tree). Useful to practice, study and see how the SBBTs works.
 
 Introduction
 ============
 
-A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching. Even though there a few types of SBBST (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
+A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching. Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
 
 It has *O(N)* space in memory and its respectives times and functions are:
 
@@ -157,10 +157,7 @@ Some functions you can use are the following:
 
 .. code-block:: python
 
-    from self_balancing_binary_search_tree import TreeNode
-    from self_balancing_binary_search_tree import getTree
-    from self_balancing_binary_search_tree import getStr
-    from self_balancing_binary_search_tree import getList
+    from sbbst import *
     # Any of the following s works out
     # s = "1 2 3 -1 4 -1 5 -1 -1 6 -1 -1 -1"
     # s = "1 2 3 None 4 None 5 None None 6 None None None"
@@ -196,5 +193,5 @@ If you want to contribute to this library, please take a look at this page_ befo
 Change Log
 ==========
 
-- 0.1.3 (09/09/2020)
+- 0.1 (09/09/2020)
     - First release
