@@ -59,28 +59,32 @@ The library works with the tree nodes defined as:
 Getting Started
 ===============
 
-To start working with the library, you will only need 2 lines more
+To start working with the library, you will only need 2 lines more:
 
 .. code-block:: python
 
     >>> from self_balancing_binary_search_tree import SBBST
     >>> MT = SBBST()
     
-And that will be enough to start working with it 
+And that will be enough to start working with it. Take the following script as example
 
 .. code-block:: python
     
-    >>> nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
-    >>> for num in nums:
-    >>>     MT.insert(num)
-    >>> print(BT)
-    >>> print("Number of elements:",BT.getSize())
-    >>> print("Height:",BT.Height())
-    >>> print("Min val:",BT.getMinVal())
-    >>> print("Max val:",BT.getMaxVal())
-    >>> print("Pre Order:",BT.inOrder())
-    >>> print("In Order:",BT.preOrder()
-    >>> print("Post Order:",BT.postOrder())
+    from self_balancing_binary_search_tree import SBBST
+    MT = SBBST()
+    nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
+    for num in nums:
+        MT.insert(num)
+    print(BT)
+    print("Number of elements:",BT.getSize())
+    print("Height:",BT.Height())
+    print("Min val:",BT.getMinVal())
+    print("Max val:",BT.getMaxVal())
+    print("Pre Order:",BT.inOrder())
+    print("In Order:",BT.preOrder()
+    print("Post Order:",BT.postOrder())
+
+This would be the output you will see in the terminal:
 
 .. code-block:: txt
 
