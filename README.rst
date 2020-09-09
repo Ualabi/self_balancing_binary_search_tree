@@ -174,6 +174,7 @@ Some functions you can use are the following:
     print("The list of the Tree is:",x)
     
 The output in the terminal will be the following:
+
 .. code-block:: txt
 
       _1
