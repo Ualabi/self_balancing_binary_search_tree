@@ -47,8 +47,8 @@ The library works with the tree nodes defined as:
     class TreeNode():
         def __init__ (self, val):
             self.val = val
-            self.place = 0
-            self.height = 1
+            self.place = 0  # helps in the print process
+            self.height = 1 # mandatory in the AVL Trees
             self.left = None
             self.right = None
 
