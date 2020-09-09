@@ -161,39 +161,18 @@ Some functions you can use are the following:
     from self_balancing_binary_search_tree import getTree
     from self_balancing_binary_search_tree import getStr
     from self_balancing_binary_search_tree import getList
-    s = "1 2 3 -1 4 -1 5 -1 -1 6 -1 -1 -1"
-    head = getTree(s)
-    print(getStr(head))
-    s = "1,2,3,null,4,null,5,null,null,6,null,null,null"
-    head = getTree(s)
-    print(getStr(head))
+    # Any of the following s works out
+    # s = "1 2 3 -1 4 -1 5 -1 -1 6 -1 -1 -1"
+    # s = "1 2 3 None 4 None 5 None None 6 None None None"
+    # s = "1,2,3,null,4,null,5,null,null,6,null,null,null"
     s = [ 1, 2, 3, None, 4, None, 5, None, None, 6, None, None, None ]
     head = getTree(s)
     print(getStr(head))
-    x = getList(head)
-    print("The list of the Tree is:",x)
+    print("The list of the Tree is:",getList(head))
     
 The output in the terminal will be the following:
 
 .. code-block:: txt
-
-      _1
-     /  \
-     2  3_
-      \   \
-      4   5
-         /
-         6
-
-
-      _1
-     /  \
-     2  3_
-      \   \
-      4   5
-         /
-         6
-
 
       _1
      /  \
