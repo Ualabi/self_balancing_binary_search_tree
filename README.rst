@@ -151,6 +151,6 @@ Additionally, I add a second class in case you want to use it along practice cod
 Contributing
 ============
 
-Please have a look at this page_ before submitting a pull request. Thanks!
+The best way to learn is to copy the code and edit it with your own necessities. And if you want to contribute to the library, please take a look at this page_ before submitting a pull request. Thanks!
 
 .. _page: http://binarytree.readthedocs.io/en/latest/contributing.html
