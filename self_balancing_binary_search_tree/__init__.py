@@ -1,4 +1,4 @@
-from __future__ import absolute_import, unicode_literals, division
+from __future__ import print_function, absolute_import, unicode_literals, division
 
 # Tree Node with different things that helps to build the AVL Tree
 class TreeNode():
@@ -11,7 +11,7 @@ class TreeNode():
         self.right = None
 
 # Self Balancing Binary Search Tree based on the type of AVL Trees
-class SBBST():
+class sbbst():
     # It instantiates the class O(1)
     def __init__(self, valslist = None):
         self.head = None
