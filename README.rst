@@ -60,21 +60,31 @@ To start working with the library, you will only need 2 lines more
 .. code-block:: python
 
     >>> from self_balancing_binary_search_tree import SBBST
-    >>> MySBBST = SBBST()
+    >>> MT = SBBST()
     
 And that will be enough to start working with it 
 
-
 .. code-block:: python
     
-    >>> a = 10
-    >>> a
-    10
-    >>> from binarytree import tree, bst, heap
-    >>>
-    >>> # Generate a random binary tree and return its root node
-    >>> my_tree = tree(height=3, is_perfect=False)
-    >>>
+    >>> nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
+    >>> for num in nums:
+    >>>     MT.insert(num)
+    >>> print(BT)
+        ____128_________
+       /                \
+      _4             ___140___
+     /  \           /         \
+     1  10        134         145___
+      \   \      /   \       /      \
+      3   14   131   135   142      147
+                                   /   \
+                                 146   149
+    >>> print("Number of elements:",BT.numberElements())
+    Number of elements: 15
+    >>> print("Height:",BT.Height())
+    Height: 5
+    >>> print("Min val:",BT.getMinVal())
+    Min val: 1
     >>> # Generate a random BST and return its root node
     >>> my_bst = bst(height=3, is_perfect=True)
     >>>
@@ -113,10 +123,10 @@ And that will be enough to start working with it
     #    0    10    6
     #
 
-Use the `TreeNode`_ class in case you want to build your own trees:
+Additionally, I add a second class in case you want to use it along practice coding in platforms such as LeetCode_ or Interbiewbit_. At the beginning I had troubles to visualize what was happening in the Tree, such as the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today. 
 
-.. _binarytree.Node:
-    http://binarytree.readthedocs.io/en/latest/specs.html#class-binarytree-node
+.. _LeetCode: https://leetcode.com/p
+.. _Interviewbit: https://www.interviewbit.com/courses/programming/
 
 .. code-block:: python
 
