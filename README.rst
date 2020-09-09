@@ -76,7 +76,7 @@ And that will be enough to start working with it. Take the following script as e
     for num in nums:
         MT.insert(num)
     print(BT)
-    print('Number of elements:',BT.getSize())
+    print("Number of elements:",BT.getSize())
     print("Height:",BT.Height())
     print("Min val:",BT.getMinVal())
     print("Max val:",BT.getMaxVal())
