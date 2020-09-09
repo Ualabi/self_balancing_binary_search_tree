@@ -81,7 +81,7 @@ And that will be enough to start working with it. Take the following script as e
     print("Min val:",BT.getMinVal())
     print("Max val:",BT.getMaxVal())
     print("3rd smallest val:",BT.kthsmallest(3))
-    print("2nd lasrgets val:",BT.kthlargest(2))
+    print("2nd largest val:",BT.kthlargest(2))
     print("Pre Order:",BT.inOrder())
     print("In Order:",BT.preOrder())
     print("Post Order:",BT.postOrder())
