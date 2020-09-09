@@ -5,8 +5,9 @@ A Python implementation of a self balancing binary search tree (AVL Tree). Usefu
 Introduction
 ============
 
-A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching.
-Its times are:
+A **self-balancing binary search tree** is a data structure, a kind advanced one I would say, that optimizes the times for insertion, deletion and serching. Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
+
+It has *O(N)* space in memory and its respectives times and functions are:
 
 =============== ===================== =====================
 Time complexity Function in the class Action             
@@ -21,8 +22,6 @@ Time complexity Function in the class Action
 *O(K+logN)*     SBBT.kthlargest(k)    Kth Maximum value
 *O(N)*          SBBT.getHeight()      Height of the tree
 =============== ===================== =====================
-
-And all that with only *O(N)* space in memory. Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
 
 I made the library **self_balancing_binary_search_tree** (sorry for the long name) with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities).
 
@@ -71,19 +70,10 @@ And that will be enough to start working with it
 
 .. code-block:: python
     
-    >>> nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
-    >>> for num in nums:
-    >>>     MT.insert(num)
-    >>> print(BT)
-        ____128_________
-       /                \
-      _4             ___140___
-     /  \           /         \
-     1  10        134         145___
-      \   \      /   \       /      \
-      3   14   131   135   142      147
-                                   /   \
-                                 146   149
+    nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
+    for num in nums:
+        MT.insert(num)
+    print(BT)
     >>> print("Number of elements:",BT.numberElements())
     Number of elements: 15
     >>> print("Height:",BT.Height())
@@ -98,6 +88,18 @@ And that will be enough to start working with it
     In Order: [128, 4, 1, 3, 10, 14, 140, 134, 131, 135, 145, 142, 147, 146, 149]
     >>> print("Post Order:",BT.postOrder())
     Post Order: [3, 1, 14, 10, 4, 131, 135, 134, 142, 146, 149, 147, 145, 140, 128]
+
+.. code-block:: txt
+
+        ____128_________
+       /                \
+      _4             ___140___
+     /  \           /         \
+     1  10        134         145___
+      \   \      /   \       /      \
+      3   14   131   135   142      147
+                                   /   \
+                                 146   149
 
 Additionally, I add a second class in case you want to use it along practice coding in platforms such as LeetCode_ or Interbiewbit_. At the beginning I had troubles to visualize what was happening in the Tree, such as the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today. 
 
