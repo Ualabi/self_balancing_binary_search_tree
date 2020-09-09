@@ -97,7 +97,7 @@ And that will be enough to start working with it. Take the following script as a
 
 This would be the output you will see in the terminal:
 
-.. code-block:: txt
+.. ::
 
         ____128_________
        /                \
