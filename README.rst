@@ -38,7 +38,7 @@ To install a stable version from PyPi_:
 
 .. code-block:: bash
 
-    ~$ pip install self_balancing_binary_search_tree
+    ~$ pip install sbbst
 
 Or download the *__init__.py* file directly from my GitHub_ and worh with it.
     
