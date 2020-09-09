@@ -143,9 +143,9 @@ This would be the output you will see in the terminal:
     Number of elements: 14
 
 
-Additionally, I add 2 functios more in case you want to use it along you practice coding in platforms such as LeetCode_ or Interbiewbit_ . (At the beginning I had troubles to visualize what was happening in the Trees and the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today.)
+Additionally, I add 2 functios more in case you want to use it along you practice coding in platforms such as LeetCode_ or Interviewbit_ . (At the beginning I had troubles to visualize what was happening in the Trees and the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today.)
 
-.. _LeetCode: https://leetcode.com/p
+.. _LeetCode: https://leetcode.com/
 .. _Interviewbit: https://www.interviewbit.com/courses/programming/
 
 Some functions you can use are the following:
