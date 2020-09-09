@@ -20,7 +20,7 @@ Time complexity Function in the class Action
 *O(logN)*       SBBT.getMaxVal()      Maximum value
 *O(K+logN)*     SBBT.kthsmallest(k)   Kth Minimum value
 *O(K+logN)*     SBBT.kthlargest(k)    Kth Maximum value
-*O(N)*          SBBT.getHeight()      Height of the tree
+*O(N)*          SBBT.getHeightTree()  Height of the tree
 =============== ===================== =====================
 
 I made the library **self_balancing_binary_search_tree** (sorry for the long name) with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities).
@@ -77,9 +77,11 @@ And that will be enough to start working with it. Take the following script as e
         MT.insert(num)
     print(BT)
     print("Number of elements:",BT.getSize())
-    print("Height:",BT.Height())
+    print("Height:",BT.getHeightTree())
     print("Min val:",BT.getMinVal())
     print("Max val:",BT.getMaxVal())
+    print("3rd smallest val:",BT.kthsmallest(3))
+    print("2nd lasrgets val:",BT.kthlargest(2))
     print("Pre Order:",BT.inOrder())
     print("In Order:",BT.preOrder())
     print("Post Order:",BT.postOrder())
@@ -109,6 +111,8 @@ This would be the output you will see in the terminal:
     Height: 5
     Min val: 1
     Max val: 149
+    3rd smallest val: 4
+    2nd lasrgets val: 145
     Pre Order: [1, 3, 4, 10, 14, 128, 131, 134, 135, 140, 142, 145, 146, 147, 149]
     In Order: [128, 4, 1, 3, 10, 14, 140, 134, 131, 135, 145, 142, 147, 146, 149]
     Post Order: [3, 1, 14, 10, 4, 131, 135, 134, 142, 146, 149, 147, 145, 140, 128]
