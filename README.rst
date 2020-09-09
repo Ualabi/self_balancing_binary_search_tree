@@ -192,3 +192,10 @@ The best way to learn is to copy the code and edit it with your own necessities.
 If you want to contribute to this library, please take a look at this page_ before submitting a pull request. Thanks!
 
 .. _page: http://binarytree.readthedocs.io/en/latest/contributing.html
+
+Change Log
+==========
+
+0.1 (09/09/2020)
+----------------
+- First release
