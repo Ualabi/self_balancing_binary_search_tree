@@ -143,7 +143,7 @@ This would be the output you will see in the terminal:
     Number of elements: 14
 
 
-Additionally, I add 2 functios more in case you want to use it along you practice coding in platforms such as LeetCode_ or Interviewbit_. (At the beginning I had troubles to visualize what was happening in the Trees and the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today.) In those pages the *input* of the trees will be like:
+Additionally, I added 3 extra functios (the 3 of them works in *O(N)* time) in case you want to use it along you practice coding in platforms such as LeetCode_ or Interviewbit_. (At the beginning I had troubles to visualize what was happening in the Trees and the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today.) In those pages the *input* of the trees will be like:
 
 .. code-block:: txt
     s = "1 2 3 -1 4 -1 5 -1 -1 6 -1 -1 -1"
