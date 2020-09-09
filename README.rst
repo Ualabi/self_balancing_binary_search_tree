@@ -55,18 +55,16 @@ The library works with the tree nodes defined as:
 Getting Started
 ===============
 
-By default, **binarytree** uses the following class to represent a node:
+To start working with the library, you will only need 3 lines more
 
 .. code-block:: python
+    >>> from self_balancing_binary_search_tree import TreeNode
+    >>> from self_balancing_binary_search_tree import SBBST
+    
+    >>> MySBBST = SBBST()
+    
+And that will be enough to start working with it 
 
-    class Node(object):
-
-        def __init__(self, value, left=None, right=None):
-            self.val = value    # The node value
-            self.left = left    # Left child
-            self.right = right  # Right child
-
-Generate and pretty-print various types of binary trees:
 
 .. code-block:: python
 
