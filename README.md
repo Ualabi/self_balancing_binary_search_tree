@@ -18,11 +18,7 @@ Its times are:
 
 Even though there a few types of SBBSTs (2–3 tree, AA tree, AVL tree, B-tree, Red–black tree, ...), in this library I decided to implement the AVL Tree because I consider it as the easiest one.
 
-**self_balancing_binary_search_tree**
-**Binarytree** is a Python library which provides a simple API to generate,
-visualize, inspect and manipulate binary trees. It allows you to skip the
-tedious work of setting up test data, and dive straight into practising your
-algorithms. Heaps and BSTs (binary search trees) are also supported.
+I made the library **self_balancing_binary_search_tree** (sorry for the long name) with the intention that you can use it easily for your own projects, learning or coding competitions (in which case I would suggest to compile your program with Pypy instead of Python3 and download the code directly from my Github and modify it as your necessities).
 
 Requirements
 ============
@@ -34,20 +30,12 @@ Installation
 
 To install a stable version from PyPi_:
 
-.. code-block:: bash
+    ~$ pip install self_balancing_binary_search_tree
 
-    ~$ pip install binarytree
+Or download the "__init__.py" file directly from my GitHub_ and work with it.
 
-To install the latest version directly from GitHub_:
-
-.. code-block:: bash
-
-    ~$ pip install -e git+git@github.com:joowani/binarytree.git@master#egg=binarytree
-
-You may need to use ``sudo`` depending on your environment.
-
-.. _PyPi: https://pypi.python.org/pypi/binarytree
-.. _GitHub: https://github.com/joowani/binarytree
+.. _PyPi: https://pypi.python.org/pypi/self_balancing_binary_search_tree
+.. _GitHub: https://github.com/Ualabi/self_balancing_binary_search_tree
 
 Getting Started
 ===============
