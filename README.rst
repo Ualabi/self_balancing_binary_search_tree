@@ -85,43 +85,14 @@ And that will be enough to start working with it
     Height: 5
     >>> print("Min val:",BT.getMinVal())
     Min val: 1
-    >>> # Generate a random BST and return its root node
-    >>> my_bst = bst(height=3, is_perfect=True)
-    >>>
-    >>> # Generate a random max heap and return its root node
-    >>> my_heap = heap(height=3, is_max=True, is_perfect=False)
-    >>>
-    >>> # Pretty-print the trees in stdout
-    >>> print(my_tree)
-    #
-    #        _______1_____
-    #       /             \
-    #      4__          ___3
-    #     /   \        /    \
-    #    0     9      13     14
-    #         / \       \
-    #        7   10      2
-    #
-    >>> print(my_bst)
-    #
-    #            ______7_______
-    #           /              \
-    #        __3__           ___11___
-    #       /     \         /        \
-    #      1       5       9         _13
-    #     / \     / \     / \       /   \
-    #    0   2   4   6   8   10    12    14
-    #
-    >>> print(my_heap)
-    #
-    #              _____14__
-    #             /         \
-    #        ____13__        9
-    #       /        \      / \
-    #      12         7    3   8
-    #     /  \       /
-    #    0    10    6
-    #
+    >>> print("Max val:",BT.getMaxVal())
+    Max val: 149
+    >>> print("Pre Order:",BT.inOrder())
+    Pre Order: [1, 3, 4, 10, 14, 128, 131, 134, 135, 140, 142, 145, 146, 147, 149]
+    >>> print("In Order:",BT.preOrder()
+    In Order: [128, 4, 1, 3, 10, 14, 140, 134, 131, 135, 145, 142, 147, 146, 149]
+    >>> print("Post Order:",BT.postOrder())
+    Post Order: [3, 1, 14, 10, 4, 131, 135, 134, 142, 146, 149, 147, 145, 140, 128]
 
 Additionally, I add a second class in case you want to use it along practice coding in platforms such as LeetCode_ or Interbiewbit_. At the beginning I had troubles to visualize what was happening in the Tree, such as the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today. 
 
