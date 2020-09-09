@@ -70,24 +70,17 @@ And that will be enough to start working with it
 
 .. code-block:: python
     
-    nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
-    for num in nums:
-        MT.insert(num)
-    print(BT)
+    >>> nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
+    >>> for num in nums:
+    >>>     MT.insert(num)
+    >>> print(BT)
     >>> print("Number of elements:",BT.numberElements())
-    Number of elements: 15
     >>> print("Height:",BT.Height())
-    Height: 5
     >>> print("Min val:",BT.getMinVal())
-    Min val: 1
     >>> print("Max val:",BT.getMaxVal())
-    Max val: 149
     >>> print("Pre Order:",BT.inOrder())
-    Pre Order: [1, 3, 4, 10, 14, 128, 131, 134, 135, 140, 142, 145, 146, 147, 149]
     >>> print("In Order:",BT.preOrder()
-    In Order: [128, 4, 1, 3, 10, 14, 140, 134, 131, 135, 145, 142, 147, 146, 149]
     >>> print("Post Order:",BT.postOrder())
-    Post Order: [3, 1, 14, 10, 4, 131, 135, 134, 142, 146, 149, 147, 145, 140, 128]
 
 .. code-block:: txt
 
@@ -100,7 +93,15 @@ And that will be enough to start working with it
       3   14   131   135   142      147
                                    /   \
                                  146   149
-
+    
+    Number of elements: 15
+    Height: 5
+    Min val: 1
+    Max val: 149
+    Pre Order: [1, 3, 4, 10, 14, 128, 131, 134, 135, 140, 142, 145, 146, 147, 149]
+    In Order: [128, 4, 1, 3, 10, 14, 140, 134, 131, 135, 145, 142, 147, 146, 149]
+    Post Order: [3, 1, 14, 10, 4, 131, 135, 134, 142, 146, 149, 147, 145, 140, 128]
+    
 Additionally, I add a second class in case you want to use it along practice coding in platforms such as LeetCode_ or Interbiewbit_. At the beginning I had troubles to visualize what was happening in the Tree, such as the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today. 
 
 .. _LeetCode: https://leetcode.com/p
