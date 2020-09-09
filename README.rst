@@ -67,7 +67,10 @@ And that will be enough to start working with it
 
 
 .. code-block:: python
-
+    
+    >>> a = 10
+    >>> a
+    10
     >>> from binarytree import tree, bst, heap
     >>>
     >>> # Generate a random binary tree and return its root node
