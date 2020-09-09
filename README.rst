@@ -1,6 +1,6 @@
 sbbst (Self Balancing Binary Search Tree)
 ---------------------------------
-A Python implementation of a self balancing binary search tree (AVL Tree). Useful to practice, study and see how the SBBTs works.
+A Python implementation of a self balancing binary search tree (AVL Tree). Useful to practice, study and see how a SBBST works.
 
 Introduction
 ============
