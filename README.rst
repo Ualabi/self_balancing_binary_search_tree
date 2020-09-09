@@ -12,7 +12,8 @@ It has *O(N)* space in memory and its respectives times and functions are:
 =============== ===================== =====================
 Time complexity Function in the class Action             
 =============== ===================== =====================
-*O(1)*          SBBT.getSize()        Size of the tree   
+*O(1)*          SBBT.getSize()        Size of the tree 
+*O(1)*          SBBT.getHeightTree()  Height of the tree
 *O(logN)*       SBBT.search(x)        Search value
 *O(logN)*       SBBT.insert(x)        Insert value
 *O(logN)*       SBBT.delete(x)        Delete value
@@ -20,7 +21,6 @@ Time complexity Function in the class Action
 *O(logN)*       SBBT.getMaxVal()      Maximum value
 *O(K+logN)*     SBBT.kthsmallest(k)   Kth Minimum value
 *O(K+logN)*     SBBT.kthlargest(k)    Kth Maximum value
-*O(N)*          SBBT.getHeightTree()  Height of the tree
 *O(N)*          str(SBBT)             Visualize the tree
 =============== ===================== =====================
 
