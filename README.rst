@@ -40,6 +40,18 @@ Or download the init.py file directly from my GitHub_ and worh with it.
 .. _PyPi: https://pypi.python.org/pypi/self_balancing_binary_search_tree
 .. _GitHub: https://github.com/Ualabi/self_balancing_binary_search_tree
 
+The library works with the tree nodes defined as:
+
+.. code-block:: python
+
+    class TreeNode():
+        def __init__ (self, val):
+            self.val = val
+            self.place = 0
+            self.height = 1
+            self.left = None
+            self.right = None
+
 Getting Started
 ===============
 
