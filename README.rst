@@ -72,27 +72,27 @@ And that will be enough to start working with it. Take the following script as a
 .. code-block:: python
     
     from self_balancing_binary_search_tree import SBBST
-    BT = SBBST()
+    ST = SBBST()
     nums = [128, 131, 4, 134, 135, 10, 1, 3, 140, 14, 142, 145, 146, 147, 149] # random numbers
     for num in nums:
-        BT.insert(num)
-    # It also works out: BT = SBBST(nums)
-    print(BT)
-    print("Number of elements:",BT.getSize())
-    print("Height:",BT.getHeightTree())
-    print("Min val:",BT.getMinVal())
-    print("Max val:",BT.getMaxVal())
-    print("3rd smallest val:",BT.kthsmallest(3))
-    print("2nd largest val:",BT.kthlargest(2))
-    print("Pre Order:",BT.inOrder())
-    print("In Order:",BT.preOrder())
-    print("Post Order:",BT.postOrder())
-    BT.delete(128)
-    BT.delete(140)
-    print(BT)
-    BT.insert(55)
-    print(BT)
-    print("Number of elements:",BT.getSize())
+        ST.insert(num)
+    # It also works out: ST = SBBST(nums)
+    print(ST)
+    print("Number of elements:",ST.getSize())
+    print("Height:",ST.getHeightTree())
+    print("Min val:",ST.getMinVal())
+    print("Max val:",ST.getMaxVal())
+    print("3rd smallest val:",ST.kthsmallest(3))
+    print("2nd largest val:",ST.kthlargest(2))
+    print("Pre Order:",ST.inOrder())
+    print("In Order:",ST.preOrder())
+    print("Post Order:",ST.postOrder())
+    ST.delete(128)
+    ST.delete(140)
+    print(ST)
+    ST.insert(55)
+    print(ST)
+    print("Number of elements:",ST.getSize())
     
 
 This would be the output you will see in the terminal:
@@ -145,7 +145,7 @@ This would be the output you will see in the terminal:
 
 Additionally, I added 3 extra functios (the 3 of them works in *O(N)* time) in case you want to use it along you practice coding in platforms such as LeetCode_ or Interviewbit_. (At the beginning I had troubles to visualize what was happening in the Trees and the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today.) In those pages the *input* of the trees will be like:
 
-.. code-block:: txt
+::
     s = "1 2 3 -1 4 -1 5 -1 -1 6 -1 -1 -1"
     s = "1,2,3,null,4,null,5,null,null,6,null,null,null"
     s = [ 1, 2, 3, None, 4, None, 5, None, None, 6, None, None, None ]
