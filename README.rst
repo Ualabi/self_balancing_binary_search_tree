@@ -144,14 +144,14 @@ This would be the output you will see in the terminal:
 
 
 Additionally, I added 3 extra functios (the 3 of them works in *O(N)* time) in case you want to use it along you practice coding in platforms such as LeetCode_ or Interviewbit_. (At the beginning I had troubles to visualize what was happening in the Trees and the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today.) In those pages the *input* of the trees will be like:
+    
+.. _LeetCode: https://leetcode.com/
+.. _Interviewbit: https://www.interviewbit.com/courses/programming/
 
 ::
     s = "1 2 3 -1 4 -1 5 -1 -1 6 -1 -1 -1"
     s = "1,2,3,null,4,null,5,null,null,6,null,null,null"
     s = [ 1, 2, 3, None, 4, None, 5, None, None, 6, None, None, None ]
-    
-.. _LeetCode: https://leetcode.com/
-.. _Interviewbit: https://www.interviewbit.com/courses/programming/
 
 Some functions you can use are the following:
 
