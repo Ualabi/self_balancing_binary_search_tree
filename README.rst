@@ -187,7 +187,9 @@ Contributing
 
 The best way to learn is to copy the code and edit it with your own necessities. You can also find other useful data structures in my GitHub https://github.com/Ualabi/Useful_Data_Structures.
 
-If you want to contribute to this library, please do a pull request. Thanks!
+If you want to contribute to this library, please do a pull request in the GitHub_. Thanks!
+
+.. _GitHub: https://github.com/Ualabi/self_balancing_binary_search_tree
 
 Change Log
 ==========
