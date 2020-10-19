@@ -40,7 +40,7 @@ To install a stable version from PyPi_:
 
     ~$ pip install sbbst
 
-Or download the *__init__.py* file directly from my GitHub_ and worh with it.
+Or download the *__init__.py* file directly from my GitHub_ and work with it.
     
 .. _PyPi: https://pypi.python.org/pypi/sbbst
 .. _GitHub: https://github.com/Ualabi/self_balancing_binary_search_tree
@@ -144,15 +144,15 @@ This would be the output you will see in the terminal:
 
 
 Additionally, I added 3 extra functios (the 3 of them works in *O(N)* time) in case you want to use it along you practice coding in platforms such as LeetCode_ or Interviewbit_. (At the beginning I had troubles to visualize what was happening in the Trees and the DFSs, swaps or insertions, so thats why I worked on in this library as sketch and then improved as it is today.) In those pages the *input* of the trees will be like:
-    
-.. _LeetCode: https://leetcode.com/
-.. _Interviewbit: https://www.interviewbit.com/courses/programming/
 
 ::
 
     s = "1 2 3 -1 4 -1 5 -1 -1 6 -1 -1 -1"
     s = "1,2,3,null,4,null,5,null,null,6,null,null,null"
     s = [ 1, 2, 3, None, 4, None, 5, None, None, 6, None, None, None ]
+    
+.. _LeetCode: https://leetcode.com/
+.. _Interviewbit: https://www.interviewbit.com/courses/programming/
 
 Some functions you can use are the following:
 
@@ -187,12 +187,14 @@ Contributing
 
 The best way to learn is to copy the code and edit it with your own necessities. You can also find other useful data structures in my GitHub https://github.com/Ualabi/Useful_Data_Structures.
 
-If you want to contribute to this library, please take a look at this page_ before submitting a pull request. Thanks!
-
-.. _page: http://binarytree.readthedocs.io/en/latest/contributing.html
+If you want to contribute to this library, please do a pull request. Thanks!
 
 Change Log
 ==========
 
 - 0.1 (09/09/2020)
     - First release
+- 1.0 (19/10/2020)
+    - Fix the counter of nodes in delete funcion. Spotted by DustinWehr_ .
+
+.. _DustinWehr: https://github.com/DustinWehr
