@@ -165,7 +165,7 @@ class sbbst():
     # It returns the min value of the Tree O(logN + K)
     def kthsmallest(self, K):
         if K < 0:
-            print('There are not elements enough in the Tree')
+            print('There are not enough elements in the Tree')
             return None
         elif self.N//2+1 < K:
             return self.kthlargest(self.N+1-K)
@@ -187,7 +187,7 @@ class sbbst():
     # It returns the max value of the Tree O(losgN + K)
     def kthlargest(self, K):
         if K < 0:
-            print('There are not elements enough in the Tree')
+            print('There are not enough elements in the Tree')
             return None
         elif self.N//2+1 < K:
             return self.kthsmallest(self.N+1-K)
