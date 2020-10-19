@@ -5,7 +5,7 @@ with open('./README.rst') as fp:
 
 setup(
     name = "sbbst",
-    version = "0.1",
+    version = "1.0",
     author = "Joseandres Hinojoza",
     author_email = "jhinojoza@outlook.com",
     description = "A Python implementation of a self balancing binary search tree (AVL Tree). Useful to practice, study and see how a SBBST works.",
