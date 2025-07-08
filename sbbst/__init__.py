@@ -12,6 +12,9 @@ class TreeNode():
 
 # Self Balancing Binary Search Tree based on the type of AVL Trees
 class sbbst():
+    # Unique sentinel object to distinguish from None
+    _sentinel = object()
+
     # It instantiates the class O(1)
     def __init__(self, valslist = None):
         self.head = None
@@ -25,16 +28,18 @@ class sbbst():
                 self.head = self.insertNode(self.head, val)
 
     # It return True if the val is found, False otherwhise O(logN)
-    def search(self, node, val):
-        if not node:
+    def search(self, val, node=_sentinel):
+        if node is self._sentinel:
+            node = self.head
+        if node is None:
             return False
+        
+        if node.val < val:
+            return self.search(val, node.right)
+        elif val < node.val:
+            return self.search(val, node.left)
         else:
-            if node.val < val:
-                return self.search(node.right, val)
-            elif val < node.val:
-                return self.search(node.left, val)
-            else:
-                return True
+            return True
 
     # It inserts a node and updates the head node O(logN)
     def insert(self, val):
